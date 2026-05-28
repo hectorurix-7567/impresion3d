@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="topnav">
+      <button id="menuBtn">☰</button>
+      <div id="links">
+      <a href="index.html">Inicio</a>
+      <a href="materiales.html">Materiales</a>
+      <a href="aplicaciones.html">Aplicaciones</a>
+      </div>
+    </nav>
+    <section class="content">
+      <article class="que-es">
+        <h2>Tipos de impresión 3d</h2>
+        <p>La  impresión 3d tiene una gran variedad de procesos, que usan diferentes materiales y tecnologías, aquí hay 3 ejemplos.</p>    
+        <div class="row">
+          <div class="column" style="background-color:#aaa;">
+            <h3 >Impresión FDM</h3>
+            <p>La tecnología FDM (Fused Deposition Modeling) es una de las más populares y accesibles. Funciona extruyendo un filamento plástico (como PLA o ABS) a través de una boquilla caliente, depositándolo capa por capa hasta formar la pieza.</p>
+            <img class=imagen src=https://images.pexels.com/photos/18296450/pexels-photo-18296450/free-photo-of-creativo-industria-tecnologia-fabrica.jpeg>
+          </div>
+          <div class="column" style="background-color:#bbb;">
+            <h3>Impresión SLA</h3>
+            <p>La SLA (Stereolithography) utiliza un láser para solidificar resina líquida fotosensible capa por capa, logrando piezas con gran nivel de detalle.</p>
+            <img class=imagen src=https://www.3dnatives.com/es/wp-content/uploads/sites/4/SLA_Technology-1280x720.jpg>
+            </div>
+          <div class="column" style="background-color:#aaa;">
+            <h3>Impresión SLS</h3> <p>La tecnología SLS (Selective Laser Sintering) emplea un láser para fusionar polvo (generalmente nylon) capa por capa, sin necesidad de soportes.</p>
+        
+            <img class=imagen src=https://www.3ds.com/assets/invest/styles/banner/public/2022-12/3D%20Print%20bed%20fusion%20SLS.jpg.webp?itok>
+          </div>
+        </div>
+       
+          
+        <footer  class="footer">
+          <p>@hector</p>
+        </footer>
+      
+        
+        
+      
+      </article>  
+    </section>
+    <script>
+      const boton=document.getElementById("menuBtn")
+      const links=document.getElementById("links")
+      boton.addEventListener("click",function(){
+        links.classList.toggle("mostrar");
+      });
+    </script>
+  </body>
+</html>

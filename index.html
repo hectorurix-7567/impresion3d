@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body >
+   
+      <header>
+        <div class="texto-header">
+          <h1> Impresión 3d</h1>
+          <hr style="width: 30%;">
+          <h4>Todo lo que necesitas saber</h4>
+        </div>
+      </header>  
+    <nav class="topnav">
+      <button id="menuBtn">☰</button>
+      <div id="links">
+      <a class="barraNavegacion" href="Tipos.html">Tipos</a>
+      <a class="barraNavegacion" href="materiales.html">Materiales</a>
+      <a class="barraNavegacion" href="aplicaciones.html">Aplicaciones</a>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <section id="pag1" class="content">
+      <article class="que-es"> 
+        <h2>¿Qué es la impresión 3d?</h2>
+        <p class="pInicio">La  impresión 3d es un tipo de manufacturado que consiste en depositar capas de material para crear un objeto en 3 dimensiones.</p>      
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7rrgtV9Vw7QzRCSlSREEjv6Bg92wL_fMEA&s">
+
+        <p class="pInicio">En esta página web encontrarás información de todo sobre la impresión 3d: tipos, materiales, aplicaciones...</p>     
+
+      </article>  
+    </section>
+    
+    <footer class="footer">
+      <p>@hector </p>
+       <p id="fecha"></p>
+    </footer>
+ 
+  <script>
+   const opciones = { year: "numeric", month: "long", day: "numeric" };
+ const boton=document.getElementById("menuBtn")
+      const links=document.getElementById("links")
+      boton.addEventListener("click",function(){
+        links.classList.toggle("mostrar");
+      });
+      document.getElementById("fecha").innerHTML =
+        new Date().toLocaleDateString("es-ES", opciones);
+        </script>
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6a169a659710543c72225709' },
+          url: 'https://general-runtime.voiceflow.com',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+  </body>
+</html>

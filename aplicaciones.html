@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="texto-header">
+        <h1>Aplicaciones</h1>
+        
+      
+      </div>
+    </header>  
+    <nav class="topnav">
+<button id="menuBtn">☰</button>
+      <div id="links">
+      <a class="barraNavegacion" href="Tipos.html">Tipos</a>
+      <a class="barraNavegacion" href="materiales.html">Materiales</a>
+      <a class="barraNavegacion" href="index.html">Inicio</a>
+      </div>
+    </nav>
+    <h2></h2>
+    <ul >
+      <img id="imagenAplicaciones" class="imagenAplicaciones" src=https://impresiontresde.com/wp-content/uploads/2016/04/ap_medicas.jpg style="float:right;width:600px;height:440px;">
+      <h4 class=lista >En la medicina</h4>
+      <li>Prótesis personalizadas</li>
+      <li>Implantes dentales y óseos</li>
+      <li>Bioimpresión de tejidos en investigación</li>
+      
+       
+    </ul>
+    <ul >
+      <h4 class=lista>En la Industria</h4>
+      <li>Prototipos rápidos y facilmente modificables</li>
+      <li>Piezas de repuesto personalizables</li>
+      <li>Herramientas y moldes personalizados</li>
+    </ul>
+    <ul >
+      <h4 class=lista>En cualquier otro ámbito</h4>
+      <li>Objetos personalizados (fundas de móvil, juguetes, accesorios de moda)</li>
+      <li>Piezas de repuesto personalizables</li>
+      <li>Y cualquier otra cosa que se te ocurra y puedas diseñar en 3d</li>
+      <hr>
+     
+    </ul>
+    <footer class="footer">
+      <p>@hector 8/4/2026</p>
+    </footer>
+    <script>
+    let imagen = document.querySelector("#imagenAplicaciones"); 
+    const boton=document.getElementById("menuBtn")
+      const links=document.getElementById("links")
+      boton.addEventListener("click",function(){
+        links.classList.toggle("mostrar");
+      });
+    setTimeout (function(){
+imagen.remove()
+    }, 2000)
+    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="topnav">
+      <button id="menuBtn">☰</button>
+      <div id="links">
+      <a href="index.html">Inicio</a>
+
+      <a href="Tipos.html">Materiales</a>
+      <a href="aplicaciones.html">Aplicaciones</a>
+      </div>
+    </nav>
+    <section class="content">
+      <article class="que-es">
+        <h2>Materiales de impresión 3d</h2>
+        <p>La  impresión 3d utiliza muchos tipos de materiales, aquí hay varios ejemplos</p>    
+      </article>
+    </section>
+    <div class="plasticos">
+    <h2>Plásticos  </h2>
+      
+    <ul>
+      
+      <img id="imagenMateriales" class=pla src="https://www.impresoras3d.com/wp-content/uploads/2018/01/Guia-Uso-PLA-Blog-00-1400x788.jpg" style="float:right"> 
+      <li><strong>PLA:</strong> Fácil de usar, biodegradable y común en impresoras domésticas.</li>
+      <li><strong>ABS:</strong> Más resistente y duradero, pero requiere mayor temperatura.</li>
+      <li><strong>PETG:</strong> Flexible, resistente y fácil de imprimir.</li>
+      <li><strong>TPU:</strong> Material flexible similar al caucho.</li>
+    </ul>
+    </div>
+    
+    
+    <h2>Resinas</h2>
+    <ul>
+      <li>Utilizadas en impresoras SLA o DLP.</li>
+      <li>Permiten obtener piezas con mucho detalle.</li>
+      <li>Existen resinas estándar, rígidas, flexibles y resistentes.</li>
+    </ul>
+
+    <h2>Metales</h2>
+    <ul>
+      <li>Acero inoxidable</li>
+      <li>Aluminio</li>
+      <li>Titanio</li>
+      <li>Usados en industria, medicina y aeronáutica.</li>
+    </ul>
+
+    <h2>Otros materiales</h2>
+    <ul>
+      <li><strong>Madera:</strong> Filamentos con partículas de madera.</li>
+      <li><strong>Fibra de carbono:</strong> Muy resistente y ligera.</li>
+      <li><strong>Nylon(PA):</strong> Flexible y muy resistente.</li>
+    </ul>
+
+    <p>La elección del material depende del uso, la resistencia necesaria y el tipo de impresora 3D. También existen materiales mixtos, como PLA con fibra de carbono o madera.</p>
+        <footer  class="footer">
+          <p>@hector</p>
+        </footer>
+        <script>
+      let cambioImagen=document.querySelector("#imagenMateriales");
+      
+      let cambioImagen1=false;
+      let cambioImagen2=false;
+      const boton=document.getElementById("menuBtn")
+      const links=document.getElementById("links")
+      boton.addEventListener("click",function(){
+        links.classList.toggle("mostrar");
+      });
+      
+      cambioImagen.addEventListener("mouseover",function(){
+        if(cambioImagen1===false & cambioImagen2===false ){
+          cambioImagen.src="https://www.impresoras3d.com/wp-content/uploads/2018/01/Guia-Uso-PLA-Blog-00-1400x788.jpg"
+          cambioImagen1=true;
+          cambioImagen2=false;
+        }
+        else{
+          cambioImagen.src="https://www.3dprinters-shop.com/blog/wp-content/uploads/2017/12/IMG_8670-e1513089175688.jpg"
+          cambioImagen1=false;
+          cambioImagen2=true;
+          
+        };
+       
+      })
+    cambioImagen.addEventListener("mouseout",function(){
+      if(cambioImagen1===false & cambioImagen2===true){
+          cambioImagen.src="https://www.3dnatives.com/es/wp-content/uploads/sites/4/Resins-cover.jpg"
+          cambioImagen1=false;
+          cambioImagen2=false;
+        }
+    })
+    </script>
+    </body>
+     
+</html>
